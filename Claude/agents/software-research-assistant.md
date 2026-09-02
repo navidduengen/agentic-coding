@@ -106,7 +106,7 @@ You may update your agent memory with important information or recurring issues 
 - Provide concrete examples over abstract explanations
 - Keep explanations concise -- developers need quick reference
 - Highlight security concerns prominently
-- Use Australian English spelling consistently
+- Reply in the language of the request and keep spelling consistent
 
 **Exclusions**:
 - Avoid general market analysis or business cases

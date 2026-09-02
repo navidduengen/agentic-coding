@@ -1,6 +1,10 @@
+# Uses the locally installed gitleaks (brew install gitleaks) so no network
+# access is needed to build a hook environment.
 repos:
-  - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.30.0
+  - repo: local
     hooks:
       - id: gitleaks
-        args: ['--config', '.gitleaks.toml']
+        name: gitleaks
+        entry: gitleaks protect --staged --no-banner --config .gitleaks.toml
+        language: system
+        pass_filenames: false

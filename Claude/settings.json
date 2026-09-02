@@ -1,31 +1,20 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "env": {
-    "CLAUDE_CODE_DISABLE_GIT_INSTRUCTIONS": "1",
-    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "380000",
-    "CLAUDE_CODE_DISABLE_MOUSE": "1",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
     "ENABLE_PROMPT_CACHING_1H": "1",
-    "CLAUDE_CODE_WORKFLOWS": "1",
-    "IMPECCABLE_HOOK_DISABLED": "1",
     "CLAUDE_CODE_SYNTAX_HIGHLIGHT": "true"
-  },
-  "attribution": {
-    "commit": "",
-    "pr": ""
   },
   "permissions": {
     "allow": [
-      "Bash(~/go/bin/run_silent *)",
-      "Bash(actionlint *)",
       "Bash(awk *)",
       "Bash(basename *)",
-      "Bash(bun *)",
-      "Bash(brew list *)",
       "Bash(brew info *)",
-      "Bash(cargo *)",
-      "Bash(cargo-fmt *)",
+      "Bash(brew list *)",
+      "Bash(bun *)",
       "Bash(cat *)",
       "Bash(cd *)",
+      "Bash(claude --version)",
       "Bash(cp *)",
       "Bash(cut *)",
       "Bash(date *)",
@@ -41,74 +30,61 @@
       "Bash(file *)",
       "Bash(find *)",
       "Bash(gh api gists *)",
+      "Bash(gh api graphql *)",
+      "Bash(gh issue list *)",
+      "Bash(gh issue view *)",
       "Bash(gh pr diff *)",
       "Bash(gh pr list *)",
       "Bash(gh pr view *)",
-      "Bash(gh api graphql *)",
+      "Bash(gh run list *)",
+      "Bash(gh run view *)",
       "Bash(git diff *)",
+      "Bash(git log *)",
       "Bash(git ls-files *)",
       "Bash(git ls-remote *)",
       "Bash(git ls-tree *)",
+      "Bash(git show *)",
       "Bash(git status *)",
       "Bash(git tag -l *)",
-      "Bash(git log *)",
-      "Bash(git show *)",
-      "Bash(go *)",
-      "Bash(gofmt *)",
-      "Bash(golangci-lint *)",
       "Bash(grep *)",
       "Bash(head *)",
-      "Bash(jest *)",
-      "Bash(sccache *)",
       "Bash(jq *)",
       "Bash(less *)",
       "Bash(ls *)",
       "Bash(make *)",
       "Bash(mkdir *)",
       "Bash(npm *)",
+      "Bash(npm run build *)",
+      "Bash(npm run check *)",
       "Bash(npx eslint *)",
       "Bash(npx prettier *)",
+      "Bash(npx tsc *)",
       "Bash(npx tsc --noEmit *)",
       "Bash(npx tsc --version *)",
       "Bash(npx vite *)",
-      "Bash(npx vite build)",
-      "Bash(npx vite build 2>&1)",
       "Bash(npx vite build 2>&1 | tail -3)",
-      "Bash(npx tsc *)",
-      "Bash(npx ctx7@latest *)",
-      "Bash(pnpx ctx7@latest *)",
-      "Bash(vite *)",
-      "Bash(otool *)",
-      "Bash(pinact *)",
+      "Bash(npx vite build 2>&1)",
+      "Bash(npx vite build)",
       "Bash(pip *)",
       "Bash(pnpm *)",
       "Bash(pwd)",
       "Bash(pytest *)",
-      "Bash(python /Users/samm/.claude/skills/extract-wisdom/scripts/wisdom.py *)",
-      "Bash(python ~/.claude/skills/extract-wisdom/scripts/wisdom.py *)",
-      "Bash(python3 /Users/samm/.claude/skills/extract-wisdom/scripts/wisdom.py *)",
-      "Bash(python3 ~/.claude/skills/extract-wisdom/scripts/wisdom.py *)",
       "Bash(realpath *)",
       "Bash(rg *)",
       "Bash(rgrep *)",
-      "Bash(run_silent *)",
-      "Bash(rustfmt *)",
-      "Bash(go run *)",
+      "Bash(ruler *)",
       "Bash(sed *)",
       "Bash(shellcheck *)",
+      "Bash(sleep *)",
       "Bash(sort *)",
       "Bash(source .venv/bin/activate)",
       "Bash(source venv/bin/activate)",
       "Bash(sqlite *)",
       "Bash(sqlite3 *)",
-      "Bash(sscache *)",
+      "Bash(stat *)",
       "Bash(swift *)",
       "Bash(swiftlint *)",
-      "Bash(xcodebuild *)",
-      "Bash(stat *)",
-      "Bash(sleep *)",
       "Bash(tail *)",
-      "Bash(tauri *)",
       "Bash(timeout *)",
       "Bash(touch *)",
       "Bash(tr *)",
@@ -118,11 +94,10 @@
       "Bash(uniq *)",
       "Bash(uv *)",
       "Bash(uvx ty check *)",
+      "Bash(vite *)",
       "Bash(wc *)",
       "Bash(which *)",
-      "Edit(./**/.dockerignore)",
-      "Edit(./**/.gitattributes)",
-      "Edit(./**/.gitignore)",
+      "Bash(xcodebuild *)",
       "Edit(./**/*.c)",
       "Edit(./**/*.cpp)",
       "Edit(./**/*.css)",
@@ -149,33 +124,27 @@
       "Edit(./**/*.ts*)",
       "Edit(./**/*.xhtml)",
       "Edit(./**/*.y*ml)",
+      "Edit(./**/.dockerignore)",
+      "Edit(./**/.gitattributes)",
+      "Edit(./**/.gitignore)",
       "Edit(./**/CLAUDE.md)",
       "Edit(./**/Dockerfile)",
       "Edit(./**/Justfile)",
       "Edit(./**/Makefile)",
-      "Edit(//Users/samm/Library/Mobile Documents/com~apple~CloudDocs/Documents/Wisdom/**)",
       "Edit(~/.cache/uv/**)",
+      "Edit(~/.claude/agents/**)",
+      "Edit(~/.claude/skills/**)",
       "Edit(~/.local/share/uv/python/**)",
       "Edit(~/.npm/_cacache/**)",
       "Edit(~/.npm/_locks/**)",
       "Edit(~/.venv/**)",
-      "Edit(~/Downloads/videos/**)",
-      "Edit(~/Library/Caches/go-build/**)",
-      "Edit(~/Library/Mobile Documents/com~apple~CloudDocs/Documents/Wisdom/**)",
-      "mcp__dev-tools",
-      "mcp__plugin_context-mode_context-mode",
-      "mcp__plugin_serena_serena",
-      "Read(~/.claude/commands/**)",
       "Read(//usr/share/zoneinfo/**)",
       "Read(//var/db/timezone/**)",
+      "Read(~/.claude/commands/**)",
       "Read(~/.claude/hooks/**)",
-      "Edit(~/go/pkg/**)",
-      "Edit(~/.claude/skills/**)",
-      "Edit(~/.claude/agents/**)",
+      "Skill",
       "WebFetch",
-      "WebSearch",
-      "Edit(~/.claude/plugins/local-marketplace/**)",
-      "Skill"
+      "WebSearch"
     ],
     "deny": [
       "NotebookEdit",
@@ -197,69 +166,69 @@
       "Bash(netcat -l *)",
       "Bash(reboot *)",
       "Bash(rm -f -r .. *)",
-      "Bash(rm -f -r /Users/samm)",
-      "Bash(rm -f -r /Users/samm*)",
+      "Bash(rm -f -r /Users/navidduengen)",
+      "Bash(rm -f -r /Users/navidduengen*)",
       "Bash(rm -f -r ~)",
       "Bash(rm -f -r ~*)",
       "Bash(rm -f -r $HOME*)",
-      "Bash(rm -fr /Users/samm)",
-      "Bash(rm -fr /Users/samm*)",
+      "Bash(rm -fr /Users/navidduengen)",
+      "Bash(rm -fr /Users/navidduengen*)",
       "Bash(rm -fr ~)",
       "Bash(rm -fr ~*)",
       "Bash(rm -fr $HOME*)",
       "Bash(rm -r -f .. *)",
-      "Bash(rm -r -f /Users/samm)",
-      "Bash(rm -r -f /Users/samm*)",
+      "Bash(rm -r -f /Users/navidduengen)",
+      "Bash(rm -r -f /Users/navidduengen*)",
       "Bash(rm -r -f ~)",
       "Bash(rm -r -f ~*)",
       "Bash(rm -r -f $HOME*)",
       "Bash(rm -rf / *)",
       "Bash(rm -rf /*)",
-      "Bash(rm -rf /Users/samm)",
-      "Bash(rm -rf /Users/samm*)",
+      "Bash(rm -rf /Users/navidduengen)",
+      "Bash(rm -rf /Users/navidduengen*)",
       "Bash(rm -rf ~)",
       "Bash(rm -rf ~*)",
       "Bash(rm -rf $HOME*)",
-      "Bash(rm -f -r \"/Users/samm\"*)",
+      "Bash(rm -f -r \"/Users/navidduengen\"*)",
       "Bash(rm -f -r \"$HOME\"*)",
       "Bash(rm -f -r \"${HOME}\"*)",
-      "Bash(rm -f -r '/Users/samm'*)",
+      "Bash(rm -f -r '/Users/navidduengen'*)",
       "Bash(rm -f -r ${HOME}*)",
-      "Bash(rm -fr \"/Users/samm\"*)",
+      "Bash(rm -fr \"/Users/navidduengen\"*)",
       "Bash(rm -fr \"$HOME\"*)",
       "Bash(rm -fr \"${HOME}\"*)",
-      "Bash(rm -fr '/Users/samm'*)",
+      "Bash(rm -fr '/Users/navidduengen'*)",
       "Bash(rm -fr ${HOME}*)",
-      "Bash(rm -r -f \"/Users/samm\"*)",
+      "Bash(rm -r -f \"/Users/navidduengen\"*)",
       "Bash(rm -r -f \"$HOME\"*)",
       "Bash(rm -r -f \"${HOME}\"*)",
-      "Bash(rm -r -f '/Users/samm'*)",
+      "Bash(rm -r -f '/Users/navidduengen'*)",
       "Bash(rm -r -f ${HOME}*)",
-      "Bash(rm -rf \"/Users/samm\"*)",
+      "Bash(rm -rf \"/Users/navidduengen\"*)",
       "Bash(rm -rf \"$HOME\"*)",
       "Bash(rm -rf \"${HOME}\"*)",
-      "Bash(rm -rf '/Users/samm'*)",
+      "Bash(rm -rf '/Users/navidduengen'*)",
       "Bash(rm -rf ${HOME}*)",
-      "Bash(rm -Rf /Users/samm*)",
+      "Bash(rm -Rf /Users/navidduengen*)",
       "Bash(rm -Rf ~*)",
       "Bash(rm -Rf $HOME*)",
       "Bash(rm -Rf \"$HOME\"*)",
-      "Bash(rm -Rf \"/Users/samm\"*)",
-      "Bash(rm -fR /Users/samm*)",
+      "Bash(rm -Rf \"/Users/navidduengen\"*)",
+      "Bash(rm -fR /Users/navidduengen*)",
       "Bash(rm -fR ~*)",
       "Bash(rm -fR $HOME*)",
       "Bash(rm -fR \"$HOME\"*)",
-      "Bash(rm -fR \"/Users/samm\"*)",
+      "Bash(rm -fR \"/Users/navidduengen\"*)",
       "Bash(rm --recursive *)",
       "Bash(rm -r --force *)",
       "Bash(rm --force -r *)",
       "Bash(rm --force --recursive *)",
       "Bash(rm --recursive --force *)",
-      "Bash(rm -rf -- /Users/samm*)",
+      "Bash(rm -rf -- /Users/navidduengen*)",
       "Bash(rm -rf -- ~*)",
       "Bash(rm -rf -- $HOME*)",
       "Bash(rm -rf -- /*)",
-      "Bash(rm -fr -- /Users/samm*)",
+      "Bash(rm -fr -- /Users/navidduengen*)",
       "Bash(rm -fr -- ~*)",
       "Bash(rm -fr -- $HOME*)",
       "Bash(rm -fr -- /*)",
@@ -294,16 +263,16 @@
       "Bash(mv \"$HOME\" *)",
       "Bash(mv \"$HOME\"/ *)",
       "Bash(mv ${HOME} *)",
-      "Bash(mv /Users/samm *)",
-      "Bash(mv /Users/samm/ *)",
-      "Bash(mv \"/Users/samm\" *)",
-      "Bash(mv \"/Users/samm\"/ *)",
+      "Bash(mv /Users/navidduengen *)",
+      "Bash(mv /Users/navidduengen/ *)",
+      "Bash(mv \"/Users/navidduengen\" *)",
+      "Bash(mv \"/Users/navidduengen\"/ *)",
       "Bash(/bin/mv ~ *)",
       "Bash(//bin/mv ~ *)",
       "Bash(/bin/mv $HOME *)",
       "Bash(//bin/mv $HOME *)",
-      "Bash(/bin/mv /Users/samm *)",
-      "Bash(//bin/mv /Users/samm *)",
+      "Bash(/bin/mv /Users/navidduengen *)",
+      "Bash(//bin/mv /Users/navidduengen *)",
       "Bash(security *)",
       "Bash(shutdown *)",
       "Bash(su *)",
@@ -323,8 +292,8 @@
       "Read(//Library/Keychains/**)",
       "Read(//Library/OpenDirectory/**)",
       "Read(//Library/Security/**)",
-      "Read(//Users/samm/Library/Mobile Documents/com~apple~CloudDocs/1Password/**)",
-      "Read(//Users/samm/Library/Mobile Documents/com~apple~CloudDocs/Backups/**)",
+      "Read(//Users/navidduengen/Library/Mobile Documents/com~apple~CloudDocs/1Password/**)",
+      "Read(//Users/navidduengen/Library/Mobile Documents/com~apple~CloudDocs/Backups/**)",
       "Read(//var/db/**)",
       "Read(~/.ssh/**)",
       "Read(~/Library/Application Support/1Password/**)",
@@ -445,10 +414,10 @@
       "Read(//Library/Logs/**)",
       "Read(//Library/Preferences/**)",
       "Read(//Library/PrivilegedHelperTools/**)",
-      "Read(//Users/samm/.claude.json)",
-      "Read(//Users/samm/.claude.local.json)",
-      "Read(//Users/samm/.claude/settings.json)",
-      "Read(//Users/samm/.claude/settings.local.json)",
+      "Read(//Users/navidduengen/.claude.json)",
+      "Read(//Users/navidduengen/.claude.local.json)",
+      "Read(//Users/navidduengen/.claude/settings.json)",
+      "Read(//Users/navidduengen/.claude/settings.local.json)",
       "Read(~/.claude.json)",
       "Read(~/.claude.local.json)",
       "Read(~/.claude/settings.json)",
@@ -465,11 +434,8 @@
     ],
     "defaultMode": "auto",
     "additionalDirectories": [
-      "../docs/",
-      "/Users/samm/git",
-      "/Users/samm/Downloads",
-      "/Users/samm/Library/Mobile Documents/com~apple~CloudDocs/Documents/Wisdom",
-      "/Users/samm/Library/Mobile Documents/com~apple~CloudDocs/Dropbox Import/dotfiles/shell_config"
+      "~/Repos",
+      "~/Downloads"
     ]
   },
   "hooks": {
@@ -506,141 +472,36 @@
           }
         ]
       }
-    ],
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"/Users/samm/.claude/hooks/context-mode-cache-heal.mjs\""
-          }
-        ]
-      },
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash '/Users/samm/.claude/hooks/herdr-agent-state.sh' session",
-            "timeout": 10
-          }
-        ]
-      }
     ]
   },
   "statusLine": {
     "type": "command",
-    "command": "/Users/samm/git/claude-statusline/claude-statusline prompt"
+    "command": "~/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
-    "bash-lsp@zircote-lsp": true,
-    "clangd-lsp@claude-plugins-official": true,
-    "frontend-design@claude-code-plugins": false,
-    "gopls-lsp@claude-plugins-official": true,
-    "impeccable@impeccable": false,
-    "playground@claude-plugins-official": false,
-    "playwright-skill@playwright-skill": false,
-    "pyright-lsp@claude-plugins-official": true,
-    "rust-analyzer-lsp@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
-    "swift-lsp@claude-plugins-official": true,
-    "tofu-lsp@local-marketplace": false,
+    "figma@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
-    "yaml-lsp@zircote-lsp": false,
-    "html-slides@html-slides": false,
-    "ralph-loop@claude-plugins-official": false,
-    "context-mode@context-mode": true,
-    "kicad-happy@kicad-happy": false,
-    "playwright@claude-plugins-official": false,
-    "session-report@claude-plugins-official": true,
-    "bento-slides@bento": true,
-    "i-have-adhd@i-have-adhd": true,
-    "cc-safety-net@cc-marketplace": true,
-    "caveman@caveman": false
+    "pyright-lsp@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
     "anthropic-agent-skills": {
       "source": {
         "source": "github",
         "repo": "anthropics/skills"
       },
       "autoUpdate": true
-    },
-    "context-mode": {
-      "source": {
-        "source": "github",
-        "repo": "mksglu/context-mode"
-      },
-      "autoUpdate": true
-    },
-    "impeccable": {
-      "source": {
-        "source": "github",
-        "repo": "pbakaus/impeccable"
-      },
-      "autoUpdate": true
-    },
-    "local-marketplace": {
-      "source": {
-        "source": "directory",
-        "path": "/Users/samm/.claude/plugins/local-marketplace"
-      },
-      "autoUpdate": true
-    },
-    "html-slides": {
-      "source": {
-        "source": "github",
-        "repo": "bluedusk/html-slides"
-      },
-      "autoUpdate": true
-    },
-    "cc-marketplace": {
-      "source": {
-        "source": "github",
-        "repo": "kenryu42/cc-marketplace"
-      },
-      "autoUpdate": true
-    },
-    "kicad-happy": {
-      "source": {
-        "source": "github",
-        "repo": "aklofas/kicad-happy"
-      },
-      "autoUpdate": true
-    },
-    "ponytail": {
-      "source": {
-        "source": "github",
-        "repo": "DietrichGebert/ponytail"
-      },
-      "autoUpdate": true
-    },
-    "bento": {
-      "source": {
-        "source": "github",
-        "repo": "nyblnet/bento"
-      },
-      "autoUpdate": true
-    },
-    "i-have-adhd": {
-      "source": {
-        "source": "github",
-        "repo": "ayghri/i-have-adhd"
-      },
-      "autoUpdate": true
-    },
-    "caveman": {
-      "source": {
-        "source": "github",
-        "repo": "JuliusBrussee/caveman"
-      }
     }
   },
-  "outputStyle": "terse",
-  "language": "Australian English",
   "sandbox": {
     "enabled": true,
-    "failIfUnavailable": true,
+    "failIfUnavailable": false,
     "autoAllowBashIfSandboxed": true,
     "network": {
       "allowedDomains": [
@@ -652,14 +513,11 @@
         "*.docker.com",
         "*.docker.io",
         "*.docs.rs",
-        "*.fedoraproject.org",
         "*.ghcr.io",
         "*.github.com",
         "*.github.io",
         "*.githubusercontent.com",
         "*.golang.org",
-        "*.icu.lol",
-        "*.mantelgroup.com.au",
         "*.nodejs.org",
         "*.npmjs.com",
         "*.npmjs.org",
@@ -667,29 +525,20 @@
         "*.pythonhosted.org",
         "*.rust-lang.org",
         "*.schemastore.org",
-        "*.search.brave.com",
         "*.wikipedia.org",
-        "*.youtube.com",
-        "*.youtu.be",
-        "*.hf.co",
-        "*.googlevideo.com",
         "ghcr.io",
         "google.com.au",
         "google.com",
-        "hf.co",
         "crates.io",
         "github.com",
-        "huggingface.co",
-        "icanhazip.com",
         "install.python-build-standalone.org",
-        "ipchicken.com",
-        "ipquail.com",
-        "kagi.com",
         "pypi.org",
         "registry.yarnpkg.com",
-        "smcleod.net",
         "swift.org",
-        "wiki.archlinux.org"
+        "*.svelte.dev",
+        "*.netlify.com",
+        "*.netlify.app",
+        "*.tailscale.com"
       ],
       "deniedDomains": [
         "*.ru",
@@ -701,17 +550,10 @@
       "allowWrite": [
         "~/.local/share/uv",
         "~/.local/bin",
-        "~/Library/org.swift.swiftpm",
-        "~/Library/Caches/org.swift.swiftpm",
-        "~/.swiftpm",
-        "~/Library/Caches/clang",
         "~/Library/Developer/Xcode/DerivedData",
         "~/Library/Logs/CoreSimulator",
         "~/Library/Caches/pip",
-        "~/go",
-        "~/.cargo/registry",
-        "~/.cargo/git",
-        "~/.lmstudio",
+        "~/.cache/pre-commit",
         "~/.npm"
       ],
       "denyWrite": [
@@ -748,25 +590,12 @@
     "enableWeakerNetworkIsolation": true,
     "excludedCommands": [
       "docker *",
-      "go mod tidy",
-      "go mod vendor",
-      "npx ctx7@latest *",
-      "pnpx ctx7@latest *",
-      "tmux-cli",
       "ssh",
-      "container",
       "date",
       "gh *",
-      "swift build *",
       "xcodebuild *"
     ]
   },
-  "promptSuggestionEnabled": false,
-  "tui": "default",
-  "preferredNotifChannel": "ghostty",
-  "remoteControlAtStartup": true,
-  "inputNeededNotifEnabled": true,
-  "agentPushNotifEnabled": true,
   "autoMode": {
     "allow": [
       "$defaults",
@@ -786,5 +615,14 @@
       "Never expose the users real email address publicly"
     ]
   },
-  "enableArtifact": false
+  "modelSettings": {
+    "claude-sonnet-5": {
+      "effortLevel": "medium"
+    }
+  },
+  "theme": "dark",
+  "teammateMode": "auto",
+  "skipWorkflowUsageWarning": true,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true
 }

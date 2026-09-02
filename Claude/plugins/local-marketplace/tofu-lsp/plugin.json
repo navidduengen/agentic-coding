@@ -1,5 +1,0 @@
-{
-  "name": "tofu-lsp",
-  "description": "OpenTofu language server (tofu-ls) for .tf and .tfvars files",
-  "version": "1.0.0"
-}

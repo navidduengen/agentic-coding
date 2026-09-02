@@ -152,7 +152,7 @@ If issues arise during implementation:
 - [ ] All user instructions followed
 - [ ] All requirements implemented and tested
 - [ ] No critical code smell warnings
-- [ ] British/Australian spelling used throughout (NO AMERICAN SPELLING ALLOWED!)
+- [ ] Consistent English spelling throughout (match the repo, do not mix British and American)
 - [ ] No smart formatting, non-ascii characters or emojis
 - [ ] Code follows project conventions and standards
 - [ ] Documentation is updated and accurate if needed

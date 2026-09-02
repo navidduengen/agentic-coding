@@ -166,7 +166,7 @@ Don't add anything covered under What to Exclude (one-off fixes, temporary worka
 
 ## Spelling Conventions
 
-Always use Australian English spelling
+Write rules in English. Match the spelling convention already used in the repo.
 
 ## Example Structure
 

@@ -17,7 +17,7 @@ set -euo pipefail
 # Clock-time arguments are interpreted in USER_TZ. Override per-invocation with
 # USER_TZ=Australia/Perth wait-until.sh 18:00, or edit the default below.
 
-: "${USER_TZ:=Australia/Melbourne}"
+: "${USER_TZ:=Europe/Berlin}"
 export TZ="${USER_TZ}"
 
 die() {

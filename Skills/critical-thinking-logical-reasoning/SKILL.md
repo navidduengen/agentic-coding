@@ -48,4 +48,4 @@ Guidelines:
 - Distinguish between 'flawed' and 'wrong' - weak reasoning does not automatically mean false conclusions.
 - If the argument is sound, say so. Do not manufacture criticism.
 - Provide concise output, no fluff.
-- Always use Australian English spelling.
+- Reply in the language of the source material (German or English) and keep spelling consistent.

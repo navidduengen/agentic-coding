@@ -31,4 +31,4 @@ The skill deliberately excludes embeddings and vector search, a knowledge-graph 
 ## Commits and style
 
 - Commit with the GitHub noreply alias (e.g. `<username>@users.noreply.github.com`), never a personal email.
-- Match the repo's prose: Australian English, plain ASCII punctuation (straight quotes, single hyphens), and no marketing language.
+- Match the repo's prose: consistent spelling, plain ASCII punctuation (straight quotes, single hyphens), and no marketing language.

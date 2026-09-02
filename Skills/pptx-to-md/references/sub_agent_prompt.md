@@ -68,7 +68,7 @@ title: <inferred>
 Rules:
 - Use source_text_paragraphs as authoritative wording. Do not paraphrase.
 - The rendered JPG is for layout, ordering, and reading text the XML missed (e.g. SmartArt, grouped shapes). Include such text inline.
-- Australian English. No emojis. No marketing fluff. Plain hyphens, plain quotes, no em-dashes.
+- Keep the language of the deck (German or English). No emojis. No marketing fluff. Plain hyphens, plain quotes, no em-dashes.
 {DECK_SPECIFIC_NOTES}
 
 Reply with one short line confirming the path written and the inferred title. Nothing else.

@@ -1,4 +1,0 @@
-{
-  "$schema": "./.schemas/subagents.schema.json",
-  "maxConcurrent": 4
-}

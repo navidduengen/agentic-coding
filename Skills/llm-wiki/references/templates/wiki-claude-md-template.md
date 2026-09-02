@@ -10,7 +10,7 @@ To work with it, start by reading `SKILL.md` in this directory - it explains how
 
 ## General rules
 
-- Always use Australian English spelling.
+- Reply in the language of the source material (German or English) and keep spelling consistent.
 - Always use plain ASCII punctuation (straight quotes, single hyphens), Do NOT use any "smart" formatting such as smart quotes, em-dashes, en-dashes or non-breaking spaces.
 
 ## Git commits

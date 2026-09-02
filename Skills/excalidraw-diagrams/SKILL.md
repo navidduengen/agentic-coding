@@ -82,8 +82,8 @@ Example:
 
 ```bash
 python3 << 'PYEOF'
-import sys, random
-sys.path.insert(0, "/Users/samm/.claude/skills/excalidraw-diagrams/scripts")
+import os, sys, random
+sys.path.insert(0, os.path.expanduser("~/.claude/skills/excalidraw-diagrams/scripts"))
 from generate_excalidraw import *
 
 random.seed(42)
